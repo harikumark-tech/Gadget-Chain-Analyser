@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>SerdeSniffer - Result</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div class="container">
+    <h1>Analysis Result</h1>
+    <p><strong>File:</strong> <span th:text="${result.filename}"></span></p>
+    <h3>Output:</h3>
+    <pre th:text="${result.output}"></pre>
+
+    <a th:href="@{/}">← Analyze another file</a>
+</div>
+</body>
+</html>

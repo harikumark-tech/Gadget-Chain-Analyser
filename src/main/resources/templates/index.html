@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>H</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body>
+<div class="container">
+    <h1>H</h1>
+    <p>Upload a JAR file to analyze for deserialization vulnerabilities</p>
+
+    <form th:action="@{/analyze}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".jar" required/>
+        <button type="submit">Analyze</button>
+    </form>
+</div>
+</body>
+</html>
